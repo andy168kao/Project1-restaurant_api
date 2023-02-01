@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>{{ restaurant['name'] }} Menu</title>
+  </head>
+  <body>
+    <h1>{{ restaurant['name'] }} Menu</h1>
+    <form action="{{ url_for('restaurant_order', restaurant_id=restaurant['id']) }}" method="post">
+      <ul>
+        {% for dish in restaurant['menu'] %}
+          <li>
+            <input type="checkbox" name="dish" value="{{ dish['id'] }}">
+            {{ dish['name'] }} - {{ dish['price'] }}
+          </li>
+        {% endfor %}
+      </ul>
+      <input type="submit" value="Order">
+    </form>
+  </body>
+</html>

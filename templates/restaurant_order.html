@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>{{ restaurant['name'] }} Order</title>
+  </head>
+  <body>
+    <h1>{{ restaurant['name'] }} Order</h1>
+    {% if order %}
+      <ul>
+        {% for dish_id in order %}
+          {% set dish = [d for d in restaurant['menu'] if d['id'] == int(dish_id)][0] %}
+          <li>{{ dish['name'] }} - {{ dish['price'] }}</li>
+        {% endfor %}
+      </ul>
+      <p>Total: {{ sum([dish['price'] for dish in restaurant['menu'] if dish['id'] in order]) }}</p>
+    {% else %}
+      <p>No dishes ordered.</p>
+    {% endif %}
+  </body>
+</html>
