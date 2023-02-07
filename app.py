@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
-
+import os
+PORT = 8080
 app = Flask(__name__)
 
 restaurants = [
@@ -53,4 +54,4 @@ def restaurant_order(restaurant_id):
     return render_template("restaurant_order.html", restaurant=restaurant)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=PORT)
