@@ -11,7 +11,10 @@ jobs:
         python-version: 3.8
     - name: Install dependencies
       run: |
-        make install
+        make install -r requirements.txt
+    - name: Install pylint
+      run: |
+        pip install pylint
     - name: Lint with Pylint
       run: |
         make lint
