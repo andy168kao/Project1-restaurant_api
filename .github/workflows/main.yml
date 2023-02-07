@@ -15,7 +15,7 @@ jobs:
     - name: Install pylint
       run: |
         pip install pylint
-    - name: Lint with Pylint
+    - name: Lint with pylint
       run: |
         make lint
 #     - name: Test with Pytest
