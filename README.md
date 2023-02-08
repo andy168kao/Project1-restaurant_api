@@ -1,5 +1,6 @@
 # Project1-restaurant_api
 Getting started:
+
 create github repo
 create ssh key on your machine
 ssh-keygen -t rsa
@@ -18,6 +19,7 @@ note: pip install -r requirements.txt
 
 
 Code describe:
+
 This is a Python code that creates a web application using the Flask framework. The code creates a RESTful API for a restaurant menu with the following endpoints:
 "/" returns a list of all restaurants with their details.
 "/restaurant/int:restaurant_id/" returns the menu of a specific restaurant.
