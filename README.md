@@ -37,7 +37,7 @@ Second Page for the Menu(by click the restaurant):
 <img width="471" alt="截圖 2023-02-08 上午1 54 21" src="https://user-images.githubusercontent.com/70717089/217460090-67cb4163-43d3-44b0-835b-9480c2bc3367.png">
 
 
-architectural diagram:
+Architectural diagram:
 
 
 ![IMG_40A4300EDDCF-1](https://user-images.githubusercontent.com/70717089/217460103-e049690b-e4bc-46b3-bad1-e59a25b7b2fd.jpeg)
